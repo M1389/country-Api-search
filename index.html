@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favIcon/icons8-world-96.png">
+    <title>API search country and borders</title>
+  </head>
+  <body>
+    <section id="search-con">
+        <div>
+            <input type="text" placeholder="Inter Country Code or Name" />
+            <button class="reset" onclick="location.reload()"><i class='bx bx-reset'></i></button>
+        </div>
+        <button id="search">Search</button>
+    </section>
+    
+    <section class="main-con">
+      <div class="info"></div>
+      <div class="flag"></div>
+    </section>
+    
+    <h2 class="neighbour-header">Neighbour Countries</h2>
+    <section class="side-country"></section>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

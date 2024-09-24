@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: #1c2833;
+}
+
+.neighbour-header{
+    text-align: center;
+    font-size: 50px;
+    margin: 30px 0;
+    font-family: "Young Serif", system-ui;
+    color: #f39c12;
+}
+
+/* search section start */
+
+#search-con{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+#search-con input{
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(11, 134, 201);
+    outline: none;
+
+}
+
+#search-con button{
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 25px;
+    border: 3px solid transparent;
+    background-color: rgb(61, 187, 254);
+    font-weight: 700;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+#search-con button:hover{
+    border: 3px solid rgb(4, 61, 136);
+}
+
+.reset{
+    width: 45px;
+    height: 45px;
+    background-color: #f39c12;
+}
+
+/* search section end */
+
+
+/* main container start */
+.main-con{
+    display: flex;
+    padding: 20px 35px;
+    border: 2px solid black;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 20px;
+
+}
+
+.info , .flag{
+    width: 50%;
+    height: 100%;
+
+}
+
+.info h2{
+    font-size: 45px;
+    font-family: "Young Serif", system-ui;
+    color: #f39c12;
+}
+
+.info p{
+    font-size: 21px;
+    margin: 10px 0;
+    font-family: "Outfit", system-ui;
+    color: #fff;
+}
+
+.flag img{
+    width: 100%;
+    height: 100%;
+}
+
+.side-country{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 35px 10px;
+
+}
+
+/* main container end */
+
+/* cards styling start */
+
+.card{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card img{
+    width: 100%;
+    height: 60%;
+}
+
+.card p{
+    font-size: 30px;
+    margin: 20px 0;
+    text-align: center;
+    font-family: "Young Serif", system-ui;
+    color: #fff;
+}
+
+/* cards styling end  */
+
+
+/* responsive page start here */
+@media screen and (max-width: 1244px) {
+    .side-country{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+
+@media screen and (max-width: 779px) {
+    
+    .main-con{
+        flex-direction: column;
+    }
+
+    .info, .flag{
+        width: 100%;
+        height: 50%;
+    }
+    
+    .side-country{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width: 457px) {
+    .side-country{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .info{
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 361px) {
+    .info h2{
+        font-size: 30px;
+    }
+
+    .info p{
+        font-size: 18px;
+    }
+
+    .card P{
+        font-size: 21px;
+    }
+}
+
+/* responsive page end here */
+
